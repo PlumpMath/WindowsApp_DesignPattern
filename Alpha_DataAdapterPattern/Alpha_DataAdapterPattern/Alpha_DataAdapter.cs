@@ -17,10 +17,20 @@ namespace Alpha_DataAdapterPattern
 
         private static Alpha_Logic logic1 = new Alpha_Logic();
         private static Alpha_Logic2 logic2 = new Alpha_Logic2();
+        private static Alpha_ErrorHandler errorChecker = new Alpha_ErrorHandler();
         
-        public void seedData(string val1)
+        public bool seedData(string val1)
         {
-            text1 = val1;
+            bool posted = true;
+            if (errorChecker.BlankCheck(val1))
+            {
+                text1 = val1;
+            }
+            else
+            {
+                posted = false;
+            }
+            return posted;
         }
         public string Text2()
         {

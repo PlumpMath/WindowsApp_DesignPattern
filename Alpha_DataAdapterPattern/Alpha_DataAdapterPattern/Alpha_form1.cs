@@ -20,11 +20,12 @@ namespace Alpha_DataAdapterPattern
             data = new Alpha_DataAdapter();
         }
 
-        private void seedDataAdapter()
+        private bool seedDataAdapter()
         {
             //Would need to update all input fields in the data adapter
-            data.seedData(textBox1.Text);
-            
+            return data.seedData(textBox1.Text);
+
+
         }
 
         private void populateForm()
@@ -38,8 +39,11 @@ namespace Alpha_DataAdapterPattern
         private void buttonDefault_Click(object sender, EventArgs e)
         {
             //All button clicks actions can be referenced back to one function
-            seedDataAdapter();
-            populateForm();
+            if (seedDataAdapter())
+            {
+                populateForm();
+            }
+            
         }
 
 

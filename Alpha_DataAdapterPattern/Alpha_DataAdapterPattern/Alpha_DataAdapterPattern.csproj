@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alpha_DataAdapter.cs" />
+    <Compile Include="Alpha_ErrorHandler.cs" />
     <Compile Include="Alpha_form1.cs">
       <SubType>Form</SubType>
     </Compile>
