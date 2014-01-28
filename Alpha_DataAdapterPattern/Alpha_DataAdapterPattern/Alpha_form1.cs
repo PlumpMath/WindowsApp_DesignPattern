@@ -24,8 +24,6 @@ namespace Alpha_DataAdapterPattern
         {
             //Would need to update all input fields in the data adapter
             return data.seedData(textBox1.Text);
-
-
         }
 
         private void populateForm()
@@ -38,7 +36,7 @@ namespace Alpha_DataAdapterPattern
 
         private void buttonDefault_Click(object sender, EventArgs e)
         {
-            //All button clicks actions can be referenced back to one function
+            //All button clicks actions can be referenced back to one function or groups of functions
             if (seedDataAdapter())
             {
                 populateForm();

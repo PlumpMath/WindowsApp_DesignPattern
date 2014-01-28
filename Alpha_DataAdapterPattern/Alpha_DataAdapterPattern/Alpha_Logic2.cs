@@ -11,6 +11,7 @@ namespace Alpha_DataAdapterPattern
 
         public string doLogic(string val1)
         {
+            //there could be some fancy logic here of course
             return val1;
         }
     }

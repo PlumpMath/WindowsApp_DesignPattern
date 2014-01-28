@@ -9,12 +9,10 @@ namespace Alpha_DataAdapterPattern
 {
     public class Alpha_Logic
     {
-        public Alpha_Logic()
-        {
-            
-        }
+        
         public string doLogic(string val1)
         {
+            //there could be some fancy logic here of course
             return val1;
         }
 
